@@ -9,6 +9,7 @@ resource "google_sql_database_instance" "default" {
       private_network = var.vpc_network
     }
   }
+  deletion_protection = false
 }
 
 resource "google_sql_database" "default" {
